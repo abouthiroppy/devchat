@@ -12,7 +12,16 @@ $ npm i devchat
 const devchat = require('devchat');
 
 devchat
-  .getPodCasts
+  .getPodCasts('category')
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+devchat
+  .getPodCast('category', 'title')
   .then((res) => {
     console.log(res);
   })

@@ -1,8 +1,14 @@
 import test from 'ava';
 import devchat from '../';
 
-test('foo', async (t) => {
-  const res = await devchat.getPodCasts('jsJabber');
+test('e2e', async (t) => {
+  const category = 'jsJabber';
 
-  console.log(res)
+  const podCasts = await devchat.getPodCasts(category);
+
+  const { path } = podCasts[0];
+
+  const podCast = await devchat.getPodCast(category, path);
+
+  console.log(podCast)
 });
