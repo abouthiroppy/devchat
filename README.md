@@ -1,4 +1,6 @@
 # devchat
+[![Build Status](https://travis-ci.org/abouthiroppy/devchat.svg?branch=master)](https://travis-ci.org/abouthiroppy/devchat)
+[![codecov](https://codecov.io/gh/abouthiroppy/devchat/branch/master/graph/badge.svg)](https://codecov.io/gh/abouthiroppy/devchat)
 
 A [devchat.tv](https://devchat.tv/)'s client.
 
